@@ -5,16 +5,17 @@ export const profile = {
   role: "Senior Software Engineer",
   location: "Cape Town, South Africa",
   tagline:
-    "I build event-driven systems that hold up under real load, and I teach other engineers how to do the same.",
+    "I build the systems that millions of banking customers rely on — and train the engineers who'll build what comes next.",
   intro:
     "Full Stack Software Engineer with 6+ years of experience building scalable, cloud-native applications in the banking and fintech domain. Proficient in .NET C#, Java, AWS, Azure, and modern frontend frameworks with a track record of delivering micro-services based solutions in regulated, agile environments. Skilled in DevOps practices, infrastructure-as-code, and mentoring junior developers. Passionate about clean architecture, continuous improvement, and shipping reliable software.",
   linkedin: "https://linkedin.com/in/lindelwe-myeza",
+  email: "lindelwenpmyeza@gmail.com",
   resumeFile: "/resume.pdf",
 };
 
 export const experience = [
   {
-    role: "Senior Software Engineer",
+    role: "Software Engineer",
     org: "Capitec Bank",
     period: "Present - 3 years 1 month",
     points: [
@@ -55,12 +56,21 @@ export const experience = [
     ],
   },
   {
-    role: "Junior Software Developer",
+    role: "Software Developer",
     org: "Astel Systems",
     period: "Past - 2 years 1 month",
     points: [
       "Integrated the Azure Cloud Portal with an IoT application built on .NET Core 6.0, successfully taking the solution from development through to production—a significant achievement as a junior developer.",
       "Gained hands-on experience across the full SDLC, including CI/CD pipelines, cloud resource provisioning, and production monitoring for cloud-based IoT services."
+    ],
+  },
+  {
+    role: "Junior Software Developer",
+    org: "Wilson Bayly Holmes (WBHO)",
+    period: "Past - 6 months",
+    points: [
+      "Supported system modernisation by contributing to migrations from RPG to Java, using Maven, Bitbucket, MySQL, HTML, and CSS.",
+      "Focused on system enhancements and reporting functionalities, gaining foundational experience in enterprise software development."
     ],
   },
 ];
@@ -75,14 +85,19 @@ export const education = [
 
 export const certifications = [
   {
-    name: "Certification name",
-    issuer: "Issuing organization",
+    name: " AWS Developer Associate",
+    issuer: "Amazon Web Services",
+    period: "Year – 2026",
+  },
+  {
+    name: "AWS Cloud Practitioner",
+    issuer: "Amazon Web Services",
     period: "Year – 2024",
   },
   {
-    name: "Another certification name",
-    issuer: "Issuing organization",
-    period: "Year – 2023",
+    name: "Azure Fundamentals AZ-900",
+    issuer: "Microsoft",
+    period: "Year – 2021",
   },
 ];
 

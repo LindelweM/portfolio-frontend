@@ -96,20 +96,27 @@ export default function Contact() {
           )}
         </form>
 
-        <div className="font-display text-sm space-y-3">
+        <div className="font-display text-sm space-y-4">
           <a
             href={`mailto:${profile.email}`}
-            className="block text-[var(--color-paper)] hover:text-[var(--color-signal)] transition-colors"
+            className="flex items-center gap-3 text-[var(--color-paper)] hover:text-[var(--color-signal)] transition-colors"
           >
-            {profile.email}
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m3 7 9 6 9-6" />
+            </svg>
+            <span>{profile.email}</span>
           </a>
           <a
             href={profile.linkedin}
             target="_blank"
             rel="noreferrer"
-            className="block text-[var(--color-paper)] hover:text-[var(--color-signal)] transition-colors"
+            className="flex items-center gap-3 text-[var(--color-paper)] hover:text-[var(--color-signal)] transition-colors"
           >
-            LinkedIn
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13M7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.22 0" />
+            </svg>
+            <span>LinkedIn</span>
           </a>
         </div>
       </div>
