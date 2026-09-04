@@ -3,6 +3,15 @@
 export const profile = {
   name: "Lindelwe",
   role: "Senior Software Engineer",
+  // Cycled by the hero typewriter. Keep them short — they share one line.
+  roles: [
+    "Senior Software Engineer",
+    "Artificial Intelligence",
+    "Cloud & Microservices",
+    "Mentor & Instructor",
+    "Full Stack Engineer",
+  ],
+  available: true,
   location: "Cape Town, South Africa",
   tagline:
     "I build the systems that millions of banking customers rely on — and train the engineers who'll build what comes next.",
@@ -102,16 +111,44 @@ export const certifications = [
 ];
 
 export const skills = [
-  { group: "Languages", items: ["C#", "Java", "Python", "JavaScript"] },
-  { group: "Backend", items: ["ASP.NET Core", "Spring Boot", "Node.js", "REST APIs"] },
-  { group: "Messaging & Data", items: ["Kafka", "RabbitMQ", "Redis", "SQL"] },
-  { group: "Frontend & Cloud", items: ["React", "AWS", "Docker"] },
+  {
+    group: "Languages",
+    items: ["C#", "Java", "Python", "TypeScript", "JavaScript", "C++"],
+  },
+  {
+    group: "Frameworks",
+    items: [".NET (MVC / Core)", "Vue.js", "React", "Node.js", "WPF / XAML"],
+  },
+  {
+    group: "Cloud & Infrastructure",
+    items: ["AWS (Lambda, Aurora RDS, S3)", "Azure", "Kubernetes", "Terraform", "Docker"],
+  },
+  {
+    group: "Data & Messaging",
+    items: ["SQL Server", "NoSQL", "Kafka", "OpenSearch"],
+  },
+  {
+    group: "DevOps & Tools",
+    items: ["GitHub Actions", "Instana", "Unleash", "GitHub Copilot", "Claude", "Bitbucket", "Maven"],
+  },
+  {
+    group: "Architecture",
+    items: ["Microservices", "Event-Driven Architecture", "REST APIs", "MERN Stack"],
+  },
+];
+
+// Shown as animated counters under the resume intro.
+export const stats = [
+  { value: 6, suffix: "+", label: "Years shipping software" },
+  { value: 50, suffix: "+", label: "Engineers & students mentored" },
+  { value: 3, suffix: "", label: "Cloud certifications" },
+  { value: 6, suffix: "", label: "Engineering teams" },
 ];
 
 export const projects = [
   {
     title: "Order & Inventory Service",
-    stack: "C# · ASP.NET Core · RabbitMQ",
+    stack: "C# · ASP.NET Core · RabbitMQ · Docker",
     description:
       "An event-driven order management system with separate orders and inventory services communicating asynchronously over a message queue.",
     image: "/projects/csharp-project.png",
