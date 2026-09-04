@@ -4,23 +4,22 @@ import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 
 /**
- * Screenshot with a designed fallback: if the image is missing the card shows
- * a patterned plate with the project's monogram instead of an empty box.
+ * Screenshot with a designed fallback: until a project has a real image, the
+ * card shows a patterned plate marked "Coming soon" rather than an empty box.
  */
 function Thumbnail({ project }) {
   const [failed, setFailed] = useState(!project.image);
-  const monogram = project.title
-    .split(" ")
-    .filter((w) => /[A-Za-z]/.test(w[0]))
-    .slice(0, 2)
-    .map((w) => w[0].toUpperCase())
-    .join("");
 
   return (
     <div className="relative aspect-[16/10] overflow-hidden rounded-t-[13px] border-b border-[var(--line)]">
       {failed ? (
         <div className="plate flex h-full w-full items-center justify-center">
-          <span className="font-display text-5xl text-[var(--accent)] opacity-60">{monogram}</span>
+          <span className="inline-flex items-center gap-2 rounded-full border border-[var(--line-strong)] bg-[var(--surface)] px-3.5 py-1.5">
+            <span className="pulse-dot h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
+            <span className="font-mono text-[0.65rem] uppercase tracking-[0.16em] text-[var(--text-soft)]">
+              Coming soon
+            </span>
+          </span>
         </div>
       ) : (
         <img
