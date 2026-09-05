@@ -24,7 +24,7 @@ function Thumbnail({ project }) {
       ) : (
         <img
           src={project.image}
-          alt={`${project.title} screenshot`}
+          alt={`${project.title} preview`}
           loading="lazy"
           onError={() => setFailed(true)}
           className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"

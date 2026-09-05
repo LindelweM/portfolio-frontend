@@ -1,5 +1,8 @@
 // Edit everything in this file with your real details — nothing else needs to change.
 
+import resumeFile from "../assets/resume.pdf";
+import orderInventoryImage from "../assets/order_inventory_event_flow_vertical.png";
+
 export const profile = {
   name: "Lindelwe",
   role: "Senior Software Engineer",
@@ -19,7 +22,7 @@ export const profile = {
     "Full Stack Software Engineer with 6+ years of experience building scalable, cloud-native applications in the banking and fintech domain. Proficient in .NET C#, Java, AWS, Azure, and modern frontend frameworks with a track record of delivering micro-services based solutions in regulated, agile environments. Skilled in DevOps practices, infrastructure-as-code, and mentoring junior developers. Passionate about clean architecture, continuous improvement, and shipping reliable software.",
   linkedin: "https://linkedin.com/in/lindelwe-myeza",
   email: "lindelwenpmyeza@gmail.com",
-  resumeFile: "/resume.pdf",
+  resumeFile,
 };
 
 export const experience = [
@@ -151,8 +154,8 @@ export const projects = [
     stack: "C# · ASP.NET Core · RabbitMQ · Docker",
     description:
       "An event-driven order management system with separate orders and inventory services communicating asynchronously over a message queue.",
-    image: "/projects/csharp-project.png",
-    repo: "https://github.com/lindelwem/order-inventory-service",
+    image: orderInventoryImage,
+    repo: "https://github.com/LindelweM/order-inventory-system",
     live: "",
   },
   {

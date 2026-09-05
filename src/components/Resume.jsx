@@ -69,7 +69,7 @@ export default function Resume() {
         <Magnetic as="span" className="inline-block">
           <a
             href={profile.resumeFile}
-            download
+            download="Lindelwe-Myeza-CV.pdf"
             className="btn-primary inline-flex items-center gap-2.5 rounded-full px-6 py-3 font-display text-sm"
           >
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
